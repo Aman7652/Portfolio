@@ -356,6 +356,7 @@ h1{
 @media (max-width: 900px){
   .hero-grid{ grid-template-columns: 1fr; }
   .stat-row{ grid-template-columns: 1fr 1fr; }
+  .grid-2{ grid-template-columns: 1fr; }
   .grid-3{ grid-template-columns: 1fr; }
   .team{ grid-template-columns: 1fr; }
 }
