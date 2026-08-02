@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sign In / Register - Aman Kesarwani Portfolio" />
+  <title>Login & Verification | Aman Kesarwani Portfolio</title>
+  <link rel="stylesheet" href="assets/main.css" />
+</head>
+<body class="auth-page-body">
+  <div class="auth-wrapper">
+    <div class="auth-header">
+      <a class="brand" href="/" aria-label="Go to Home">
+        <svg class="brand-logo" width="48" height="48" viewBox="0 0 64 64" role="img" aria-label="Aman Kesarwani logo" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g-login" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="var(--accent)"/>
+              <stop offset="1" stop-color="var(--accent-2)"/>
+            </linearGradient>
+          </defs>
+          <rect x="6" y="6" width="52" height="52" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)"/>
+          <path d="M18 36c6-14 22-20 28-8 2 4 1 9-2 12-6 6-18 8-26-4z" fill="url(#g-login)" opacity="0.95"/>
+          <path d="M22 40c7 6 22 2 24-8" fill="none" stroke="rgba(255,255,255,0.65)" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="22" cy="25" r="3" fill="rgba(255,255,255,0.8)"/>
+        </svg>
+        <div class="brand-title">
+          <strong>Aman Kesarwani</strong>
+          <span>Portfolio Authentication</span>
+        </div>
+      </a>
+      <a href="/" class="btn ghost small">← Back to Home</a>
+    </div>
+
+    <div class="card auth-card">
+      <h3 style="margin:0 0 16px; font-size:18px; text-align:center;">🔑 Sign In / Portal Access</h3>
+
+      <!-- Demo Accounts Tip -->
+      <div class="demo-box">
+        <strong>💡 Quick Test Roles:</strong>
+        <p>👑 Admin (Aman Kesarwani): <code>amankesarwani0928@gmail.com</code> / <code>admin123</code></p>
+        <p>👤 Customer / Client: <code>client@example.com</code> / <code>client123</code></p>
+      </div>
+
+      <div id="auth-alert" class="auth-alert" style="display: none;"></div>
+
+      <!-- LOGIN FORM -->
+      <form id="standalone-login-form" class="auth-form" onsubmit="handleLoginSubmit(event)">
+        <div class="form-group">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" required placeholder="user@example.com" autocomplete="username" />
+        </div>
+
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" required placeholder="••••••••" autocomplete="current-password" />
+        </div>
+
+        <button type="submit" class="btn primary full-width">Sign In</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
