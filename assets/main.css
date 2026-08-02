@@ -379,6 +379,23 @@ h1{
   }
   .form{ grid-template-columns: 1fr; }
   .stat-row{ grid-template-columns: 1fr; }
+  
+  /* Comprehensive Mobile Enhancements */
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .section-head h2 { font-size: 20px; }
+  .card, .hero-card, .accomplishment-card, .experience-card, .contact-side {
+    padding: 16px;
+  }
+  h1 { font-size: 26px; }
+  .hero { padding: 30px 0 20px; }
+  .cert-grid { grid-template-columns: 1fr; }
+  .exp-header { flex-direction: column; gap: 8px; }
+  .project-tags { gap: 4px; }
+  .tag-pill { font-size: 10px; padding: 4px 8px; }
 }
 
 /* Added for single-page + no local images */
